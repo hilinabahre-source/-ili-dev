@@ -7,6 +7,7 @@ import { setFeedbackLevel, submitFeedback } from './views/feedback.js';
 import './services/cloud-sync.js';
 import './components/profile-modal.js';
 import { initJelly } from './components/jelly.js';
+import { initJourney } from './components/journey.js';
 import { openProfile, choosePaper, downloadPattern } from './services/pattern-downloads.js';
 import { openFigure } from './components/figure-viewer.js';
 
@@ -22,6 +23,7 @@ Object.assign(window, {
 
 navigate('home');
 initJelly();
+initJourney();
 
 // Accounts (Supabase) and the BodyDouble avatar viewer load separately, so a
 // slow or unavailable BodyDouble CDN can't hold up the rest of the site.
