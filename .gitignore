@@ -1,0 +1,9 @@
+.DS_Store
+
+# Secrets: never commit keys, passwords or environment files
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+.seamscape_key

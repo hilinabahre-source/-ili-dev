@@ -1,0 +1,11 @@
+/* ---------- avatar form (inside the profile modal) ---------- */
+.avatar-stitch-heading{
+  display:inline-block;
+  align-self:flex-start;
+  width:fit-content;
+  background-color:var(--indigo);
+  color:#faf8f4;
+  padding:8px 20px;
+  border-radius:10px;
+  margin-bottom:4px;
+}

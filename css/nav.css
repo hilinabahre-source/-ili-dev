@@ -1,0 +1,44 @@
+/* ---------- layout shell ---------- */
+.app-nav{
+  position:sticky;top:0;z-index:50;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:14px 28px;
+  background:rgba(15,11,22,0.82);
+  backdrop-filter:blur(14px);
+}
+.brand{display:flex;align-items:center;gap:10px;font-family:'Unbounded',sans-serif;font-weight:800;font-size:1.35rem;letter-spacing:-0.5px;}
+.brand-mark{width:36px;height:36px;border-radius:12px;background:linear-gradient(135deg,#f5d56a 0%,#f39b5b 35%,#0d2a45 100%);display:flex;align-items:center;justify-content:center;font-size:1.1rem;transform:rotate(-8deg);box-shadow:var(--shadow-glow);color:#0b1f35;border:1px solid rgba(255,255,255,0.24);}
+.brand-wordmark{
+  font-family:'Poppins',sans-serif;
+  font-weight:800;
+  letter-spacing:-0.12em;
+  font-size:1.9rem;
+  line-height:1;
+  color:#0d1f32;
+  transform:translateY(-1px);
+}
+.app-nav.garment-nav{background:#fdfbf6;padding:10px 28px 6px;align-items:flex-start;}
+.garment-nav .brand-mark{background:#cfc6b2;color:#5c5340;border-color:rgba(92,83,64,0.24);box-shadow:none;}
+.garment-nav .brand-wordmark{color:#5c5340;}
+.clothesline-wrap-xl{position:relative;flex:1;display:flex;justify-content:center;align-items:flex-start;height:220px;margin:0 20px;overflow:visible;}
+.clothesline-rope-xl{position:absolute;top:0;left:4px;right:-38px;width:calc(100% + 34px);height:40px;pointer-events:none;}
+.clothesline-post-left{position:absolute;top:8px;left:-10px;width:30px;height:24px;pointer-events:none;}
+.clothesline-bow-right{position:absolute;top:-10px;right:-44px;width:30px;height:24px;pointer-events:none;}
+.nav-links{position:relative;z-index:1;display:flex;gap:16px;align-items:flex-start;padding-top:0;}
+.garment-btn{background:none;border:none;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:2px;padding:0;transform-origin:50% 0%;animation:garmentSway 4.6s ease-in-out infinite;}
+.garment-btn:nth-child(1){animation-delay:0s;}
+.garment-btn:nth-child(2){animation-delay:.6s;}
+.garment-btn:nth-child(3){animation-delay:1.2s;}
+.garment-btn:nth-child(4){animation-delay:.3s;}
+.garment-btn:nth-child(5){animation-delay:.9s;}
+@keyframes garmentSway{0%,100%{transform:rotate(-2.5deg);}50%{transform:rotate(2.5deg);}}
+.garment-label{font-size:0.76rem;font-weight:600;color:#6b6252;}
+.garment-btn.active .garment-label{color:#2c2a22;text-decoration:underline;text-decoration-color:#8a7d64;}
+.nav-links button:not(.garment-btn){
+  padding:9px 16px;border-radius:100px;font-size:0.92rem;font-weight:600;color:var(--text-dim);
+  transition:all .15s ease;
+}
+.nav-links button:not(.garment-btn):hover{color:var(--text);background:var(--surface);}
+.nav-links button.active:not(.garment-btn){color:#0f0b16;background:var(--grad-lime);}
+.nav-cta{padding:10px 18px;border-radius:100px;background:var(--grad-main);font-weight:700;font-size:0.9rem;box-shadow:var(--shadow-glow);}
+.nav-links-mobile-hint{display:none;}

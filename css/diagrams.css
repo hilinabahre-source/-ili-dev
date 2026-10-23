@@ -1,0 +1,15 @@
+/* ---------- diagram animations ---------- */
+.anim-dash{animation:dashmove 1.2s linear infinite;}
+@keyframes dashmove{to{stroke-dashoffset:-22;}}
+.anim-arrow{animation:bob 1.4s ease-in-out infinite;}
+@keyframes bob{0%,100%{transform:translateY(0);}50%{transform:translateY(6px);}}
+.anim-pins circle{animation:pinpulse 1.6s ease-in-out infinite;}
+@keyframes pinpulse{0%,100%{opacity:.4;}50%{opacity:1;}}
+.anim-wave{animation:wavemove 2s ease-in-out infinite;}
+@keyframes wavemove{0%,100%{transform:translateY(0);}50%{transform:translateY(4px);}}
+.anim-slide{animation:slidein 1.8s ease-in-out infinite;}
+@keyframes slidein{0%,100%{transform:translateX(0);}50%{transform:translateX(-38px);}}
+.anim-foldup{animation:foldpulse 1.6s ease-in-out infinite;}
+@keyframes foldpulse{0%,100%{opacity:.7;}50%{opacity:1;transform:translateY(-3px);}}
+.anim-snip polygon{animation:snip 1.5s ease-in-out infinite;}
+@keyframes snip{0%,100%{opacity:.3;transform:scale(1);}50%{opacity:1;transform:scale(1.15);}}
